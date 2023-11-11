@@ -1,0 +1,7 @@
+# Lancez la commande :
+# sudo mysql
+
+# Entrer les deux lignes suivantes pour obtenir un compte admin :
+CREATE USER 'user'@'localhost' IDENTIFIED BY '-+';
+GRANT ALL PRIVILEGES ON *.* to 'user'@'localhost' WITH GRANT OPTION;
+

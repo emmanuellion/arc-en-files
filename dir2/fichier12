@@ -1,0 +1,10 @@
+postfix, /etc/main.cf:
+home_mailbox = Maildir/
+
+cd $HOME
+maildirmake Maildir
+maildirmake -f Sent Maildir
+maildirmake -f Archive Maildir
+maildirmake -f Junk Maildir
+maildirmake -f Drafts Maildir
+maildirmake -f Trash Maildir

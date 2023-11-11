@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>infres</title>
+	<link href="../../../css/w3.css" rel="stylesheet" />
+	<link href="../../../css/w3-colors-2019.css" rel="stylesheet" />
+	<link href="../../../css/default.css" rel="stylesheet" />
+	<link href="../../../css/prism.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="javascript:base();">
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey anileft" style="width:230px;" id="sidebar_menu">
+  <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <h6 class="w3-bar-item  w3-2019-turmeric">INFRES</h6>
+  <a href="../../../pages/home/index/" class="w3-bar-item w3-button">Webographie</a>
+  <a href="../../../pages/home/scripts/" class="w3-bar-item w3-button">Scripts</a>
+  <h6 class="w3-bar-item w3-2019-fiesta">Client/Passerelle</h6>
+  <a href="../../../pages/tp/1-install/1.0-preparation" class="w3-bar-item w3-button">1.0 - Preparation</a>
+  <a href="../../../pages/tp/1-install/1.1-ubuntu" class="w3-bar-item w3-button">1.1 - Client Ubuntu</a>
+  <a href="../../../pages/tp/1-install/1.2-debian" class="w3-bar-item w3-button">1.2 - Passerelle Debian</a>
+  <a href="../../../pages/tp/1-install/1.3-dhcp" class="w3-bar-item w3-button">1.3 - Serveur DHCP</a>
+  <a href="../../../pages/tp/1-install/1.4-dns" class="w3-bar-item w3-button">1.4 - Serveur DNS</a>
+  <a href="../../../pages/tp/1-install/1.5-diagexo" class="w3-bar-item w3-button">1.5 - Diagnostiques &amp; Exercices</a>
+  <h6 class="w3-bar-item w3-2019-jester-red">Linux shell</h6>
+  <a href="../../../pages/tp/2-shell/" class="w3-bar-item w3-button">2 - Linux shell</a>
+  <h6 class="w3-bar-item w3-2019-biking-red">LXC</h6>
+  <a href="../../../pages/tp/3-lxc/" class="w3-bar-item w3-button">3 - LXC</a>
+<!--
+  <a href="../../../pages/tp/4-docker/" class="w3-bar-item w3-button">4 - Docker Base</a>
+  <a href="../../../pages/tp/5-docker-layer/" class="w3-bar-item w3-button">5 - Docker Layer</a>
+-->
+  <h6 class="w3-bar-item w3-green">Aides</h6>
+  <a href="../../../pages/aides/terminal/" class="w3-bar-item w3-button">Terminaux</a>
+  <a href="../../../pages/aides/shell/" class="w3-bar-item w3-button">Shells</a>
+  <a href="../../../pages/aides/ssh/" class="w3-bar-item w3-button">SSH</a>
+  <a href="../../../pages/aides/logs/" class="w3-bar-item w3-button">Journaux</a>
+  <a href="../../../pages/aides/vim/" class="w3-bar-item w3-button">Vim</a>
+  <a href="../../../pages/aides/tunning/" class="w3-bar-item w3-button">Environnements</a>
+</div>
+
+<div class="w3-main" style="margin-left:230px">
+  <div>
+    <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+
+<h1>INFRES</h1>
+<p><a href="../../../pictures/network_by-sander-weeteling_unsplash.jpg">
+    <img src="../../../pictures/network_cropped_by-sander-weeteling_unsplash.jpg" title="Network by Sander Weeteling" />
+</a></p>
+<!-- Image possibility
+
+<a href="../../../pictures/network_by-sander-weeteling_unsplash.jpg">
+    <img src="../../../pictures/network_cropped_by-sander-weeteling_unsplash.jpg" title="Network by Sander Weeteling" />
+</a>
+
+<figure><a href="../../../pictures/network_by-sander-weeteling_unsplash.jpg">
+    <img src="../../../pictures/network_cropped_by-sander-weeteling_unsplash.jpg" />
+    <figcaption>Network by Sander Weeteling</figcaption>
+</a></figure>
+
+![Network by Sander Weeteling](../../../pictures/network_by-sander-weeteling_unsplash.jpg)
+-->
+
+<h1>Webographie</h1>
+<h2>Lecture</h2>
+<ul>
+<li><a href="https://boutique.ed-diamond.com">Edition Diamond</a></li>
+<li><a href="https://www.fullcirclemag.fr">Full Circle Mag</a></li>
+<li><a href="http://www.linuxfromscratch.org">Linux From Scratch</a></li>
+</ul>
+<!--
+## Docker
+- [Installation Debian](https://docs.docker.com/install/linux/docker-ce/debian/) | 
+- [Installation Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- [Présentation (vidéo)](https://www.youtube.com/watch?v=XgKOC6X8W28)
+- [Premiers pas](http://website.simplx.fr/blog/2016/11/25/premiers-pas-avec-docker/)
+- [Conférence J.Petazzoni (vidéo)](../../../files/videos/conf-docker.mp4)
+- [Introduction](https://www.wanadev.fr/categorie/3-docker/)
+- [Utilisation](http://xataz.developpez.com/tutoriels/utilisation-docker/)
+- [Sys/Net Admin Training](http://training.play-with-docker.com/ops-stage1/)
+- [Installation & commande de base (vidéo)](https://www.youtube.com/watch?v=UwlaOAiaHeU)
+-->
+
+<h2>Références</h2>
+<ul>
+<li><a href="../../../files/pdfs/ref-debian.pdf">Carte de référence Debian</a></li>
+<li><a href="../../../files/pdfs/linux-unix-ref.pdf">Unix/Linux Command Reference</a></li>
+<li><a href="../../../files/pdfs/vim.pdf">Vim en 3 pages</a></li>
+<li><a href="../../../files/pdfs/pqrc-2.4-a4-latest.pdf">Python</a></li>
+<li><a href="https://explainshell.com">ExplainShell</a></li>
+</ul>
+<h2>Documentation de kalitaiye™</h2>
+<ul>
+<li><a href="https://github.com/trimstray/the-book-of-secret-knowledge#anger-table-of-contents">Secret Knowledge book</a></li>
+<li><a href="https://www.grimoire-command.es/2018/memo_0.html">Grimoire Command</a></li>
+<li><a href="https://git-scm.com/book/fr/v2">The Git book</a></li>
+<li><a href="https://help.ubuntu.com/lts/serverguide/">Ubuntu Server Guide</a></li>
+<li><a href="https://wiki.archlinux.org/">Arch Linux Wiki</a></li>
+<li><a href="https://formation-debian.viarezo.fr/">Formation Debian</a></li>
+<li><a href="https://github.com/trimstray/nginx-admins-handbook">Nginx Admin's Handbook</a></li>
+<li><a href="http://lea-linux.org/">Lea Linux</a></li>
+<li><a href="https://framasoft.org/">Framasoft</a></li>
+<li><a href="https://www.bestcours.com/systeme-exploitation/linux/">BestCours</a></li>
+</ul>
+<h2>Regex</h2>
+<ul>
+<li><a href="https://ihateregex.io/">iHateRegex</a></li>
+<li><a href="https://regexr.com/">RegexR</a></li>
+<li><a href="https://regex101.com/">Regex101</a></li>
+</ul>
+<h2>Formation, Moocs</h2>
+<ul>
+<li><a href="https://leetcode.com">Leetcode</a></li>
+<li><a href="https://www.fun-mooc.fr/">FUN - Se former en liberté</a></li>
+<li><a href="https://openclassrooms.com">OpenClassrooms</a></li>
+<li><a href="https://www.udemy.com/fr/">Udemy</a></li>
+<li><a href="http://www.sup-numerique.gouv.fr/">Le portail du numérique dans l'enseignement supérieur</a></li>
+<li><a href="https://www.coursera.org/">Coursera</a></li>
+<li><a href="https://www.coorpacademy.com/">Coorpacademy</a></li>
+<li><a href="https://mooc-francophone.com/">MOOC Francophone</a></li>
+<li><a href="https://www.rescif.net/">Réseau d'excellence des sciences de l'ingénieur de la Francophonie</a></li>
+<li><a href="https://fr.wikiversity.org">Wikiversity</a></li>
+<li><a href="http://univ-numerique.fr">Universités numériques thématiques</a></li>
+<li><a href="https://www.canal-u.tv">Canal U</a></li>
+</ul>
+<h2>Vidéos</h2>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCVRJ6D343dX-x730MRP8tNw">CocAdmin</a></li>
+<li><a href="https://www.youtube.com/channel/UCYnvxJ-PKiGXo_tYXpWAC-w">Micode</a></li>
+</ul>
+<h2>Jobs</h2>
+<ul>
+<li><a href="https://www.linuxjobs.fr">Linux Job</a></li>
+<li><a href="https://www.talent.io">Talent.io</a></li>
+</ul>
+<h2>Hardware libre</h2>
+<ul>
+<li><a href="https://www.tuxedocomputers.com">Tuxedo computer</a></li>
+<li><a href="https://www.pine64.org">Pine64</a></li>
+<li><a href="https://pcubuntoo.fr">PCUbuntoo</a></li>
+<li><a href="https://keynux.com">Keynux</a></li>
+<li><a href="http://shop.ekimia.fr">Ekimia</a></li>
+<li><a href="https://system76.com">System 76</a></li>
+<li><a href="https://puri.sm">Purism</a></li>
+</ul>
+<h2>Feeding</h2>
+<p>Il est important de se tenir informer. Pour être bien informé, il ne faut pas dépendre des algorithmes de filtrage des moteurs de recherche ou des réseaux sociaux. Pour ne pas les laisser décider à votre place de ce que vous lirez et de ce que vous ne lirez pas, générez vos propres listes de lecture au moyen d'un agrégateur de flux</p>
+<h3>Reader</h3>
+<ul>
+<li>Auto-hébergé&nbsp;: <a href="https://tt-rss.org">Tiny Tiny RSS</a></li>
+<li>Service gratuit&nbsp;: <a href="https://feedly.com/">Feedly</a></li>
+</ul>
+<h3>Flux</h3>
+<ul>
+<li><a href="https://www.phoronix.com">Phoronix</a> → <a href="https://www.phoronix.com/rss.php">flux</a></li>
+<li><a href="https://linuxfr.org">LinuxFr</a> → <a href="https://linuxfr.org/news.atom">flux</a></li>
+<li><a href="https://lecourrierduhacker.com">Le courrier du hacker</a> → <a href="https://lecourrierduhacker.com/rss.xml">flux</a></li>
+<li><a href="https://framablog.org">Le Framablog</a> → <a href="https://framablog.org/feed/">flux</a></li>
+<li><a href="http://libregraphicsworld.org">Libre Graphics World</a> → <a href="http://libregraphicsworld.org/feeds/atom">flux</a></li>
+<li><a href="http://standblog.org">StandBlog</a> → <a href="http://standblog.org/blog/feed/rss2">flux</a></li>
+<li><a href="http://planet.ubuntu-fr.org">Ubuntu Planet</a> → <a href="http://planet.ubuntu-fr.org/feed/atom">flux</a></li>
+<li><a href="https://usbeketrica.com">Usbek &amp; Rica</a> → <a href="https://usbeketrica.com/rss">flux</a></li>
+<li><a href="https://www.jesuisundev.com">JeSuisUnDev</a> → <a href="https://www.jesuisundev.com/feed/">flux</a></li>
+<li><a href="http://korben.info">Korben</a> → <a href="http://korben.info/feed">flux</a></li>
+<li><a href="http://www.numerama.com">Numerama</a> → <a href="http://www.numerama.com/feed/">flux</a></li>
+<li><a href="http://www.nextinpact.com">Next Inpact</a> → <a href="http://www.nextinpact.com/rss/news.xml">flux</a></li>
+<li><a href="https://arstechnica.com">Ars Technica</a> → <a href="http://feeds.arstechnica.com/arstechnica/index">flux</a></li>
+<li><a href="http://www.commitstrip.com/fr/">Commit Strip</a> → <a href="http://www.commitstrip.com/fr/feed/">flux</a></li>
+</ul>
+
+
+    </div>
+  </div>
+</div>
+
+<script>
+  function w3_open() {
+    /*document.getElementById("sidebar_menu").style.display = "block";*/
+    document.getElementById("sidebar_menu").style.left = "0px";
+  }
+  function w3_close() {
+    /*document.getElementById("sidebar_menu").style.display = "none";*/
+    document.getElementById("sidebar_menu").style.left = "-230px";
+  }
+</script>
+
+<script src="../../../javascript/prism.js"></script>
+<script src="../../../javascript/default.js"></script>
+
+<br/>
+<br/>
+<footer><p>2010-2019 © Joseph Maillardet</p></footer>
+
+</body>
+
+</html>

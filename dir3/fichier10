@@ -1,0 +1,52 @@
+#! /usr/bin/env bash
+
+info() { printf "%s\n" "$1"; }
+
+error() {
+	>&2 info "Erreur: $1"
+	[ "$2" == 1 ] && usage
+	[ -z "$3" ] || exit "$3"
+}
+
+usage() {
+	cat <<- EOF
+
+		Usage: $(basename "$0") {date} {explication}
+		       date: une date compatible avec la commande date (man date)
+		       explication: la raison de ce compte à rebour
+
+	EOF
+}
+
+[ -z "$1" ] && error "Vous devez indiquer une date en argument" 1 1
+[ -z "$2" ] && exp="quelque chose d'important" || exp="$2"
+
+today=$(date +%s)
+
+next=$(date -d "$1" +%s) \
+	|| error "La date fourni n'est pas valable" 1 2
+
+secondes=$(( next - today ))
+
+[ "$secondes" -lt 0 ] && error "La date fourni est antérieur à aujourd'hui" 0 3
+
+jours=$(( secondes / 60 / 60 / 24 ))
+secondes=$(( secondes - ( jours * 24 * 60 * 60 ) ))
+
+heures=$(( secondes / 60 / 60 ))
+secondes=$(( secondes - ( heures * 60 * 60 ) ))
+
+minutes=$(( secondes / 60 ))
+secondes=$(( secondes - ( minutes * 60 ) ))
+
+if [ "$jours" -gt 1 ]; then
+	txtj="$jours jours et "
+elif [ "$jours" -eq 1 ]; then
+	txtj="$jours jour et "
+else
+	txtj=""
+fi
+
+info "Il reste ${txtj}${heures}h ${minutes}m ${secondes}s avant $exp"
+
+exit 0
